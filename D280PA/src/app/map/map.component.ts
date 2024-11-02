@@ -13,5 +13,6 @@ export class MapComponent {
   mapClick(event: MouseEvent){
     event;
     alert("hi");
+    alert(this.mapdata.getData("CH"));
   }
 }
