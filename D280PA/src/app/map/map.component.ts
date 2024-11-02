@@ -11,8 +11,10 @@ import { MapdataService } from '../mapdata.service';
 export class MapComponent {
   constructor(private mapdata: MapdataService){}
   mapClick(event: MouseEvent){
-    event;
-    alert("hi");
-    alert(this.mapdata.getData("CH"));
+    const eventTarget = event.target as HTMLElement;
+    const cCode = eventTarget.id;
+    alert(cCode);
+    const test = (this.mapdata.getData(cCode));
+    alert(test.querySelector("name")?.textContent);
   }
 }
