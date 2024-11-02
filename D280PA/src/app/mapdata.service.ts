@@ -8,9 +8,11 @@ import { Observable } from 'rxjs';
 export class MapdataService {
 
   constructor(private http: HttpClient) { }
+     test = '';
     getData(countryCode: String){
       const mapUrl = ("https://api.worldbank.org/V2/country/"+ countryCode);
-      return mapUrl;
+      this.http.get(mapUrl,{responseType:"text"}).subscribe(data => {this.test=data});
+      return this.test;
     }
 
 
