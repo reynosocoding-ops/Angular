@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { MapComponent } from './map/map.component';
+import { NgModule } from '@angular/core';
 import { map } from 'rxjs';
 
 @Component({
@@ -12,6 +13,7 @@ import { map } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'D280PA';
 }

@@ -7,6 +7,9 @@ import { HttpClient } from '@angular/common/http';
 export class MapdataService {
 
   constructor(private http: HttpClient) { }
+    getData(countryCode: String){
+      return this.http.get("https://api.worldbank.org/V2/country/"+ countryCode)
+    }
 
 
 }

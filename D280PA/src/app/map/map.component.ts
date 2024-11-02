@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MapdataService } from '../mapdata.service';
 
 @Component({
   selector: 'app-map',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './map.component.css'
 })
 export class MapComponent {
+  constructor(private mapdata: MapdataService){}
   mapClick(event: MouseEvent){
     event;
     alert("hi");
