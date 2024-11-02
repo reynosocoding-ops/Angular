@@ -1,6 +1,10 @@
 #maindiv {
     display: flex;
 }
-#maindiv * {
-    width: 50%
+#maindiv app-map {
+    width: 60%
+}
+
+#main div app-table {
+    width: 40%;
 }
