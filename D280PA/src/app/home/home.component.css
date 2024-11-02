@@ -1,0 +1,6 @@
+#maindiv {
+    display: flex;
+}
+#maindiv * {
+    width: 50%
+}
