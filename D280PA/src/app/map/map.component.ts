@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './map.component.css'
 })
 export class MapComponent {
-
+  mapClick(event: MouseEvent){
+    event;
+    alert("hi");
+  }
 }
