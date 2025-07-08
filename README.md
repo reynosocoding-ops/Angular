@@ -1,3 +1,1 @@
-Student ID: 012333768
-Angular Version: 17.2.3
-
+World Map that uses an API to return information dependant on what part of the map is clicked. 
